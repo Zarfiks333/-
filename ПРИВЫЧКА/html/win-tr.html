@@ -1,0 +1,40 @@
+<section  id="mainContentArea">
+    <div class="txt-block-tr">
+        <button onclick="closeSlideScreen()">⬅️ назад</button>
+        <h1>Победы 🥇</h1>
+    </div>
+    <main>
+        <div class="block-tr" id="victoriesContainer">
+        </div>
+        <div class="menu-tr">
+            <button href="" class="add-tr" style="background-color: rgba(30, 255, 0, 0.1);">+ Добавить</button>
+        </div>
+        
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal-content">
+                <h2>Добавить победу</h2>
+                <textarea id="victoryText" placeholder="Что ты сделал сегодня? Даже если это просто встал с кровати..." rows="4"></textarea>
+                <input type="date" id="victoryDate">
+                <div class="modal-buttons">
+                    <button class="cancel" id="cancelBtn">Отмена</button>
+                    <button class="add" id="addBtn">Добавить</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <h2>Редактировать победу</h2>
+                <textarea id="editVictoryText" placeholder="Что ты сделал сегодня? Даже если это просто встал с кровати..." rows="4"></textarea>
+                <input type="date" id="editVictoryDate">
+                <div class="modal-buttons">
+                    <button class="cancel" id="editCancelBtn">Отмена</button>
+                    <button class="add" id="editSaveBtn">Сохранить</button>
+                </div>
+                <button class="delete-btn" id="deleteBtn" style="background-color: rgba(255, 0, 0, 0.1); border-radius: 12px; padding: 12px; color: white; width: 100%;">Удалить</button>
+            </div>
+        </div>
+    </main>
+</section>
+
+<div id="toast" class="toast"></div>

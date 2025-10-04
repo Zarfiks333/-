@@ -1,0 +1,76 @@
+<section  id="mainContentArea">
+    <div class="txt-block-tr">
+        <button onclick="closeSlideScreen()">⬅️ назад</button>
+        <h1>Финансы 💸</h1>
+    </div>
+    <main>
+        <div class="summary-stats">
+            <div class="stat-box">
+                <h3>Доход:</h3>
+                <p class="zarabotano">0 ₽</p>
+            </div>
+            <div class="stat-box">
+                <h3>Расход:</h3>
+                <p class="trati">0 ₽</p>
+            </div>
+            <div class="stat-box">
+                <h3>Общая статистика:</h3>
+                <p class="balance">0 ₽</p>
+            </div>
+        </div>
+        <div class="block-tr" id="transactionsContainer">
+            <!-- Записи будут добавляться сюда -->
+        </div>
+        <div class="menu-tr" style="display: flex; flex-direction: column; gap: 10px; width: 100%; justify-content: center; align-items: center;">
+            <div class="filter-controls" style="width: 100%;">
+                <select id="monthFilter">
+                    <option value="all">За всё время</option>
+                    <option value="0">Январь</option>
+                    <option value="1">Февраль</option>
+                    <option value="2">Март</option>
+                    <option value="3">Апрель</option>
+                    <option value="4">Май</option>
+                    <option value="5">Июнь</option>
+                    <option value="6">Июль</option>
+                    <option value="7">Август</option>
+                    <option value="8">Сентябрь</option>
+                    <option value="9">Октябрь</option>
+                    <option value="10">Ноябрь</option>
+                    <option value="11">Декабрь</option>
+                </select>
+            </div>
+            <div class="btn" style=" display: flex; gap: 10px; width: 100%;">
+                <button href="#" class="add-tr" style="background-color: rgba(30, 255, 0, 0.1);">Заработал</button>
+                <button href="#" class="remove-tr" style="background-color: rgba(255, 0, 0, 0.1);">Потратил</button>
+            </div>
+        </div>
+    </main>
+</section>
+<div class="modal">
+    <div class="modal-content">
+        <h2 id="modalTitle">Добавить доход</h2>
+        <input type="number" id="amountInput" placeholder="Сумма" required>
+        <input type="text" id="descriptionInput" placeholder="Описание (необязательно)">
+        <div class="modal-buttons">
+            <button class="cancel">Отмена</button>
+            <button class="add">Добавить</button>
+        </div>
+    </div>
+</div>
+<!-- Модальное окно для действий (редактировать/удалить) -->
+<div class="modal-edit">
+    <div class="modal-content-edit">
+        <h2>Редактировать запись</h2>
+        <input type="number" id="editAmountInput" placeholder="Сумма" required>
+        <input type="text" id="editDescriptionInput" placeholder="Описание">
+        <div class="modal-buttons-edit" style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px;">
+                <button class="cancel-edit">Отмена</button>
+                <button class="save-edit">Сохранить</button>
+            </div>
+            <button class="delete-btn" style="background-color: rgba(255, 0, 0, 0.1);">Удалить</button>
+        </div>
+    </div>
+</div>
+<!-- Всплывающее сообщение -->
+<div class="toast" id="toast"></div>
