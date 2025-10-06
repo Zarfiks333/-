@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tyle.css">
+    <link rel="shortcut icon" href="/img/Screenshot_369.png" type="image/x-icon">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Привычка</title>
+</head>
+<body>
+<section id="mainContentArea">
+    <!-- Основной экран (главная страница) -->
+    <div id="mainScreen" class="screen">
+        <div class="txt-block">
+            <p>
+                Стань лучшей версией себя 
+                <span id="realTime" style="font-size: 12px; margin-left: 5px;"></span>
+            </p>
+        </div>
+        <div class="what-you-tr"></div>
+        <main>
+            <h1 class="" style="font-size: 28px; display: flex; text-align: center; align-items: center; flex-direction: column;">Измени сегодня <br> Cвою жизнь</h1>
+            <button data-tracker-id="win-tr" onclick="loadContent('html/win-tr.html')" class="win-tr" жёлтый style="background-color: rgba(255, 230, 0, 0.1);">
+                <h2>Победы 🥇</h2>
+                <p>Незабывай записывать даже малейшие победы данный трекер поможет повысеть уверенность и чёткость ума</p>
+            </button>
+
+            <button data-tracker-id="quest-tr" onclick="loadContent('html/qutes-tr.html')" class="quest-tr" голубой style="background-color: rgba(0, 255, 255, 0.1);">
+                <h2>Задачи 📝</h2>
+                <p>Незабывай записывать даже малейшие задачи на день данный трекер поможет повысеть продуктивность и контроль своего времени</p>
+            </button>
+
+            <button data-tracker-id="fiat-tr" onclick="loadContent('html/fiat-tr.html')" class="fiat-tr" зелённый style="background-color: rgba(30, 255, 0, 0.1);">
+                <h2>Финансы 💸</h2>
+                <p>Незабывай записывать даже малейшие доходы и траты данный трекер поможет повысеть финансовую грамотность</p>
+            </button>
+
+            <button data-tracker-id="life-tr" onclick="loadContent('html/life-tr.html')" class="life-tr" красный style="background-color: rgba(255, 0, 0, 0.1);">
+                <h2>Жизнь ❤️</h2>
+                <p>Данный трекер поможет узнать сколько вы прожили и осознать сколько у вас времени на жизнь</p>
+            </button>
+            <p class="" style="display: flex; justify-content: center; text-align: center; align-items: center; opacity: 0.4;"><a href="https://t.me/zaharinarchive   " target="_blank" style="opacity: 0.5;">-> Мой тг t.me/zaharinarchive <-</a></p>
+        </main>
+    </div>
+
+    <!-- Выезжающий экран (для трекеров) -->
+    <div id="slideScreen" class="screen slide-screen">
+        <!-- Контент будет загружаться сюда -->
+    </div>
+</section>
+<script src="/js/js.js"></script>
+<script src="/js/all-trackers.js"></script>
+</body>
+</html>
